@@ -1,0 +1,198 @@
+
+package com.example.sanskriti.blooper.People;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+
+@SuppressWarnings("unused")
+public class PersonMovies {
+
+    @Expose
+    private Boolean adult;
+    @SerializedName("backdrop_path")
+    private String backdropPath;
+    @Expose
+    private String character;
+    @SerializedName("credit_id")
+    private String creditId;
+    @SerializedName("genre_ids")
+    private ArrayList<Integer> genreIds;
+    @Expose
+    private Long id;
+    @SerializedName("original_language")
+    private String originalLanguage;
+    @SerializedName("original_title")
+    private String originalTitle;
+    @Expose
+    private String overview;
+    @Expose
+    private Double popularity;
+    @SerializedName("poster_path")
+    private String posterPath;
+    @SerializedName("release_date")
+    private String releaseDate;
+    @Expose
+    private String title;
+    @Expose
+    private Boolean video;
+    @SerializedName("vote_average")
+    private Double voteAverage;
+    @SerializedName("vote_count")
+    private Long voteCount;
+
+    public Boolean getAdult() {
+        return adult;
+    }
+
+    public void setAdult(Boolean adult) {
+        this.adult = adult;
+    }
+
+    public String getBackdropPath() {
+        return backdropPath;
+    }
+
+    public void setBackdropPath(String backdropPath) {
+        this.backdropPath = backdropPath;
+    }
+
+    public String getCharacter() {
+        return character;
+    }
+
+    public void setCharacter(String character) {
+        this.character = character;
+    }
+
+    public String getCreditId() {
+        return creditId;
+    }
+
+    public void setCreditId(String creditId) {
+        this.creditId = creditId;
+    }
+
+    public    ArrayList<Integer> getGenreIds() {
+        return genreIds;
+    }
+
+    public void setGenreIds(   ArrayList<Integer> genreIds) {
+        this.genreIds = genreIds;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getOriginalLanguage() {
+        return originalLanguage;
+    }
+
+    public void setOriginalLanguage(String originalLanguage) {
+        this.originalLanguage = originalLanguage;
+    }
+
+    public String getOriginalTitle() {
+        return originalTitle;
+    }
+
+    public void setOriginalTitle(String originalTitle) {
+        this.originalTitle = originalTitle;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public void setOverview(String overview) {
+        this.overview = overview;
+    }
+
+    public Double getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(Double popularity) {
+        this.popularity = popularity;
+    }
+
+    public String getPosterPath() {
+        return posterPath;
+    }
+
+    public void setPosterPath(String posterPath) {
+        this.posterPath = posterPath;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Boolean getVideo() {
+        return video;
+    }
+
+    public void setVideo(Boolean video) {
+        this.video = video;
+    }
+
+    public Double getVoteAverage() {
+        return voteAverage;
+    }
+
+    public void setVoteAverage(Double voteAverage) {
+        this.voteAverage = voteAverage;
+    }
+
+    public Long getVoteCount() {
+        return voteCount;
+    }
+
+    public void setVoteCount(Long voteCount) {
+        this.voteCount = voteCount;
+    }
+
+    public PersonMovies(Boolean adult, String backdropPath,
+                        String character, String creditId,
+                        ArrayList<Integer> genreIds, Long id,
+                        String originalLanguage, String originalTitle,
+                        String overview, Double popularity,
+                        String posterPath, String releaseDate, String title,
+                        Boolean video, Double voteAverage, Long voteCount) {
+        this.adult = adult;
+        this.backdropPath = backdropPath;
+        this.character = character;
+        this.creditId = creditId;
+        this.genreIds = genreIds;
+        this.id = id;
+        this.originalLanguage = originalLanguage;
+        this.originalTitle = originalTitle;
+        this.overview = overview;
+        this.popularity = popularity;
+        this.posterPath = posterPath;
+        this.releaseDate = releaseDate;
+        this.title = title;
+        this.video = video;
+        this.voteAverage = voteAverage;
+        this.voteCount = voteCount;
+    }
+}

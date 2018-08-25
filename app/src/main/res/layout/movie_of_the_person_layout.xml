@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+
+            android:id="@+id/movieImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            app:riv_border_color="#f2f2f2"
+            app:riv_border_width="5dp"
+            app:riv_corner_radius_bottom_left="30dp"
+            app:riv_corner_radius_top_right="30dp"
+
+
+            />
+        <TextView
+            android:id="@+id/movieTextView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Movie Name"
+            android:textColor="#f2f2f2"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="as"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#f2f2f2"/>
+
+
+        <TextView
+            android:id="@+id/characterNameOfThePerson"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#f2f2f2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

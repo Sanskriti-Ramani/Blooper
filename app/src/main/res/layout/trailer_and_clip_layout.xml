@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/clipImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            app:riv_border_color="#f2f2f2"
+            app:riv_border_width="3dp"
+            app:riv_corner_radius_bottom_right="50dp" />
+
+        <TextView
+            android:id="@+id/clipTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clipImageView"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textColor="#f2f2f2"
+            android:text="TrailersName"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

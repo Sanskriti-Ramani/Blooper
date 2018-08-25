@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+            app:title="Blooper"
+            app:titleTextColor="#ffffff"
+                android:visibility="visible">
+
+            </android.support.v7.widget.Toolbar>
+
+            <Button
+            android:id="@+id/searchButton"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_search_black_24dp"
+            android:gravity="end|right"
+            android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"></Button>
+
+
+            <Button
+            android:id="@+id/doneButton"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_toLeftOf="@+id/cancelButton"
+            android:background="@drawable/ic_done_black_24dp"
+
+
+           android:visibility="invisible"
+                android:layout_marginRight="20dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_highlight_off_black_24dp"
+                android:gravity="end|right"
+                android:layout_alignParentRight="true"
+              android:visibility="invisible"
+                android:layout_marginRight="20dp" />
+
+            <EditText
+            android:id="@+id/searchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/doneButton"
+            android:visibility="invisible"
+            android:hint="Enter Movie/Show"
+            />
+
+
+
+        </RelativeLayout>
+
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+            <!--app:title="Blooper"-->
+            <!--app:titleTextColor="#ffffff">-->
+        <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:id="@+id/searchButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:background="@drawable/ic_search_black_24dp"-->
+                <!--android:gravity="end|right"-->
+                <!--android:layout_alignParentRight="true"></Button>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/doneButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+              <!--android:background="@drawable/ic_done_black_24dp"-->
+                <!--android:gravity="end|right"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:visibility="invisible"/>-->
+
+
+                <!--/>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/searchName"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toLeftOf="@+id/searchButton"-->
+                <!--android:visibility="invisible"-->
+                <!--android:hint="Enter Name"-->
+                <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!---->
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
